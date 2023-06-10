@@ -1,0 +1,88 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "linbook",
+    "version": "../package.json"
+  },
+  "tauri": {
+    "pattern": {
+      "use": "brownfield",
+      "WindowsUpdateInstallMode": "basicUi"
+    },
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "xin.linme.dev.linbook",
+      "publisher": "linhu xcz",
+      "shortDescription": "一个简单的工具箱 / A simple kit",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "allowDowngrades": true,
+        "webviewInstallMode": {
+          "type": "offlineInstaller"
+        },
+        "nsis": {
+          "license": "./xkz.md",
+          "installMode": "both",
+          "displayLanguageSelector": false,
+          "languages": [
+            "en-US",
+            "zh-CN",
+            "pt-BR",
+            "fr-FR"
+          ]
+        },
+        "wix": {
+          "language": [
+            "en-US",
+            "zh-CN",
+            "pt-BR",
+            "fr-FR"
+          ]
+        },
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "label": "main",
+        "fileDropEnabled": true,
+        "center": true,
+        "fullscreen": false,
+        "resizable": true,
+        "title": "柠狐工具箱",
+        "minWidth": 800,
+        "minHeight": 600,
+        "maximized": true,
+        "decorations": true,
+        "width": 1000,
+        "height": 600,
+        "url": "index.html"
+      }
+    ]
+  }
+}
