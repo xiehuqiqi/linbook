@@ -1,0 +1,13 @@
+#wonav {
+  position: relative;
+  top: 1%;
+  left: 5%;
+  float: left;
+  z-index: 10000;
+  width: 90%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: bisque;
+  align-items: center;
+  
+}

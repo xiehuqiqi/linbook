@@ -7,12 +7,12 @@ import Csh from "./pages/csh";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      
         <Routes>
           <Route path="/" element={<Wo />}></Route>
           <Route path="/about" element={<Csh />}></Route>
         </Routes>
-      </header>
+      
     </div>
   );
 }
