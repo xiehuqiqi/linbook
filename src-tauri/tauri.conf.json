@@ -41,27 +41,22 @@
           "type": "offlineInstaller"
         },
         "nsis": {
-          "license": "./xkz.md",
+          "license": "../LICENSE.txt",
           "installMode": "both",
           "displayLanguageSelector": false,
           "languages": [
-            "en-US",
-            "zh-CN",
-            "pt-BR",
-            "fr-FR"
+            "English",
+            "TradChinese"
           ]
         },
         "wix": {
           "language": [
-            "en-US",
+            "en-US", 
             "zh-CN",
             "pt-BR",
             "fr-FR"
           ]
-        },
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": ""
+        }
       }
     },
     "security": {
