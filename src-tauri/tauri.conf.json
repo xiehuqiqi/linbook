@@ -51,7 +51,7 @@
         },
         "wix": {
           "language": [
-            "en-US", 
+            "en-US",
             "zh-CN",
             "pt-BR",
             "fr-FR"
@@ -76,8 +76,37 @@
         "decorations": true,
         "width": 1000,
         "height": 600,
-        "url": "index.html"
+        "url": "index.html",
+        "visible": false
+      },
+      {
+        "visible": true,
+        "width": 400,
+        "height": 200,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen",
+        "alwaysOnTop": true,
+        "center": true,
+        "title": "柠狐工具箱"
+      },
+      {
+        "label": "huwo",
+        "fileDropEnabled": true,
+        "center": true,
+        "fullscreen": false,
+        "resizable": true,
+        "title": "huwo",
+        "minWidth": 800,
+        "minHeight": 600,
+        "maximized": true,
+        "decorations": true,
+        "width": 1000,
+        "height": 600,
+        "url": "http://lemon_hu.rf.gd",
+        "visible": false
       }
+
     ]
   }
 }

@@ -6,13 +6,12 @@ import Csh from "./pages/csh";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div id="App">
         <Routes>
           <Route path="/" element={<Wo />}></Route>
-          <Route path="/about" element={<Csh />}></Route>
+          <Route path="/csh" element={<Csh />}></Route>
+          <Route path="/seeting" element={<></>}></Route>
         </Routes>
-      
     </div>
   );
 }
